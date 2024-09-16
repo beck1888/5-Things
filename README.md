@@ -7,9 +7,9 @@ This program creates a podcast with the 5 most important pieces of news from the
 1. Clone the repository
 2. Install the required packages with `pip install -r requirements.txt`
 3. Create a `.env` file in the root directory with the following content:
-```
-OPENAI_API_KEY=<your-api-key-here-starting-with-sk>
-```
+    ```
+    OPENAI_API_KEY=<your-api-key-here-starting-with-sk>
+    ```
 
 ## Usage
 1. Run the program with `python main.py`
