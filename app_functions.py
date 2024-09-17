@@ -154,7 +154,7 @@ def complete_script(story_script):
     time_of_day = _get_time_of_day()
     # disclaimer = ""
     header = f"Good {time_of_day} from the 5 things podcast, powered by The New York Times. My name is Quantum, your AI host, and here are the top 5 things you need to know for {_get_formatted_date()}."
-    footer = "That's all for now. Come back later today to catch our next show. This is Quantum, signing off."
+    footer = "That's all for now. Come tomorrow to catch our next show. This is Quantum, signing off."
     full_script = f"{header}\n\n{story_script}\n\n{footer}"
     return full_script
 
