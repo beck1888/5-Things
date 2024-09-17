@@ -12,7 +12,7 @@ def clear():
 
 def confirm_run():
     code = str(random.randint(0, 9)) + str(random.randint(0, 9)) + str(random.randint(0, 9)) + str(random.randint(0, 9))
-    print("WARNING: This script will generate a lot of expensive API calls. Please confirm you want to run this script by entering the following code: " + code)
+    print("WARNING: This script will generate a lot of expensive API calls (about 2 to 3 cents per run). Please confirm you want to run this script by entering the following code: " + code)
     choice = input(">> ")
     if choice == code:
         return True
@@ -152,10 +152,10 @@ def _get_formatted_date():
 
 def complete_script(story_script):
     time_of_day = _get_time_of_day()
-    disclaimer = "HEADS UP: The voice you are hearing is a computer generated voice, not a human."
-    header = f"Good {time_of_day} from Beck's 5 things, powered by The New York Times. My name is Quantum and here are the top 5 things you need to know for {_get_formatted_date()}."
+    # disclaimer = ""
+    header = f"Good {time_of_day} from Beck's 5 things, powered by The New York Times. My name is Quantum, the AI voice host, and here are the top 5 things you need to know for {_get_formatted_date()}."
     footer = "That's all for now. Come back later today to catch our next show. This is Quantum, signing off."
-    full_script = f"{disclaimer} {header}\n\n{story_script}\n\n{footer}"
+    full_script = f"{header}\n\n{story_script}\n\n{footer}"
     return full_script
 
 def translate(text, target_lang = "Spanish"):

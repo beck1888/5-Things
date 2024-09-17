@@ -31,10 +31,14 @@ full_script = complete_script(story_only_script)
 
 # print(full_script)
 
-LANG = "English"
+LANG = "Kazakh"
 
 print("Translating the script...")
-full_script = translate(full_script, target_lang=LANG)
+if LANG != "English":
+    full_script = translate(full_script, target_lang=LANG)
+else:
+    print("No translation needed.")
+    full_script = full_script
 
 print("Generating audio...")
 cache = say(full_script, lang=LANG)
