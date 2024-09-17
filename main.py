@@ -31,7 +31,7 @@ full_script = complete_script(story_only_script)
 
 # print(full_script)
 
-LANG = "Spanish"
+LANG = "English"
 
 print("Translating the script...")
 if LANG != "English":
